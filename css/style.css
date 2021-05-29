@@ -422,7 +422,167 @@ select:focus {
   justify-content: space-between;
   margin: 100px auto 50px; 
 }
+/* -------Cart Page Style-------- */
+.cart-page {
+  margin: 80px auto;
+}
 
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cart-info {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cart-info p {
+  font-size: 20px;
+}
+
+.cart-info small {
+  font-size: 15px;
+}
+
+th {
+  text-align: left;
+  padding: 5px;
+  color: #fff;
+  font-weight: normal;
+  background-color: #ff523b;
+}
+
+td {
+  padding: 10px 5px;
+}
+
+td input {
+  padding: 5px;
+  width: 50px;
+  height: 40px;
+  font-size: 15px;
+}
+  
+td input:focus {
+  outline: none
+}
+
+td a {
+  color: #ff523b;
+  font-size: 15px;
+}
+
+td img {
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+}
+
+.total-price {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.total-price table {
+  border-top: 3px solid #ff523b;
+  width: 100%;
+  max-width: 360px;
+}
+
+td:last-child {
+  text-align: right;
+}
+
+th:last-child {
+  text-align: right;
+}
+/* -------End Cart Page Style-------- */
+
+.account-page {
+  padding: 50px 0;
+  background: radial-gradient(#fff, #ffd6d6);
+}
+
+.form-container {
+  background: #fff;
+  width: 300px;
+  height: 400px;
+  position: relative;
+  text-align: center;
+  padding: 20px 0;
+  margin: auto;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.form-container span {
+  font-weight: bold;
+  padding: 0 10px;
+  color: #555;
+  cursor: pointer;
+  width: 100px;
+  display: inline-block;
+}
+
+.form-btn {
+  display: inline-block;
+}
+
+.form-container form {
+  max-width: 300px;
+  padding: 0 20px;
+  position: absolute;
+  top: 130px;
+  transition: 1s ease transform;
+}
+
+form input {
+  width: 100%;
+  height: 30px;
+  margin: 10px 0;
+  padding: 0 10px;
+  border: 1px solid #ccc;
+}
+
+form .btn {
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+form .btn:focus {
+  outline: none;
+}
+
+.login-form {
+  left: -300px;
+}
+
+.register-form {
+  left: 0;
+}
+
+form a {
+  font-size: 20px;
+}
+
+.indicator {
+  width: 100px;
+  border: none;
+  background: #ff523b;
+  height: 3px;
+  margin-top: 8px;
+  transform: translateX(100px);
+  transition: 1s ease transform;
+}
+/* --------Account page---------- */
+
+
+
+
+/* ----------Media Queries----------- */
 @media (max-width: 800px) {
   .row {
     text-align: center;
@@ -453,6 +613,10 @@ select:focus {
   .single-product h1 {
     font-size: 26px;
     line-height: 32px;
-  }  
+  }
+
+  .cart-info p {
+    display: none;
+  }
 }
 

@@ -32,3 +32,5 @@ smallImage[2].onclick= function() {
 smallImage[3].onclick= function() {
   productImage.src = smallImage[3].src
 }
+
+
